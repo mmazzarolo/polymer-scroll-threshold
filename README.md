@@ -1,7 +1,7 @@
 # polymer-scroll-threshold
 
 This element is a port of `core-scroll-threshold` to polymer 1.0.  
-You can learn about it <a href="https://www.polymer-project.org/0.5/docs/elements/core-scroll-threshold.html">here</a>.
+You can learn more of it <a href="https://www.polymer-project.org/0.5/docs/elements/core-scroll-threshold.html">here</a>.
 
 ### Info
 `polymer-scroll-threshold` is an utility element that listens for scroll events from a scrollable region and fires events to indicate when the scroller has reached a pre-defined limit, specified in pixels from the upper and lower bounds of the scrollable region.  
