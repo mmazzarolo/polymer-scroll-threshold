@@ -1,0 +1,49 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../polymer-scroll-threshold.html">
+
+<link rel="import" href="../../layout/layout.html">
+<link rel="stylesheet" href="../../paper-styles/demo.css">
+
+<link rel="stylesheet" href="style.css">
+
+<dom-module id='demo-component'>
+
+	<template>
+
+		<polymer-scroll-threshold id="threshold" lower-threshold="1" on-lower-trigger="_loadMore" lower-triggered="{{lowerTriggered}}" fit></polymer-scroll-threshold>
+
+		<div id="scroller" class="vertical layout center" fill>
+
+			<template is="dom-repeat" items="{{items}}">
+				<div class="item"><h1>{{item}}</h1></div>
+			</template>	
+
+			<div hidden$="{{!lowerTriggered}}">Please wait...</div>
+		</div>
+
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is:'demo-component',
+
+		properties: {
+			items: {type: Array, value: function() {return [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];}},
+		},
+
+		ready: function() {
+			this.$.threshold.scrollTarget = this.$.scroller;
+		},
+
+		_loadMore: function() {
+			console.log("loadmore")
+			var n = this.items.length;
+	        for (var i=n; i<n+20; i++) {
+	          this.push('items', i);
+	        }
+	        this.$.threshold.clearLower();
+	      }
+
+	});
+</script>

@@ -1,0 +1,12 @@
+#scroller {
+	height: 300px;
+	border: 2px solid lightblue;
+	padding: 20px;
+	overflow: auto;
+}
+
+.item {
+	border-bottom: 1px solid lightblue;
+	padding: 15px;
+	text-align: center;
+}

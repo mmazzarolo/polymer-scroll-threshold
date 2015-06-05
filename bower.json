@@ -1,0 +1,39 @@
+{
+  "name": "polymer-scroll-threshold",
+  "version": "0.0.1",
+  "description": "Scroll thresold",
+  "authors": [
+    "Mazzarolo Matteo <mazzarolomatteo@gmail.com>"
+  ],
+  "keywords": [
+    "web-components",
+    "web-component",
+    "polymer",
+    "img",
+    "image",
+    "resize",
+    "resizable",
+    "scroll",
+    "core-scroll-threshold"
+  ],
+  "main": [
+    "polymer-scroll-threshold.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mazzaaaaa/polymer-scroll-threshold.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Mazzaaaaa/polymer-scroll-threshold",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#^1.0.0"
+  }
+}
