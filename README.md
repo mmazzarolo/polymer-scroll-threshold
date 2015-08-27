@@ -35,6 +35,3 @@ Once a threshold has been reached, a `lower-trigger` or `upper-trigger` event wi
 
 ### Demo
 <a href="http://mazzarolomatteo.com/polymer/poly-reddit/">(Look at the bottom of the page)</a>
-
-### Contacts
-Email: Mazzarolomatteo@gmail.com
